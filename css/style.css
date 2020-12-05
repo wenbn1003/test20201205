@@ -1,0 +1,348 @@
+*{
+ padding: 0;
+ margin: 0;   
+}
+
+body{
+    background: rgb(126, 126, 126);
+}
+.main{
+    display: block;
+    width: 100%;
+    background: seagreen;
+    font-family: 'Microsoft JhengHei';
+}
+
+.header{
+    text-align: center;
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    background: rgb(67, 113, 195);
+    border-bottom: #000 5px solid;
+}
+
+.content{
+    display: block;
+    width: 100%;
+    height: 100%;   
+}
+.cmain{
+    width: 96%;
+    margin: 15px auto 0 auto;
+    background: rgb(22, 17, 14);
+}
+
+.club{
+    display: block;
+    box-sizing:border-box;
+    font-size: 50px;
+    width: 22%;
+    height: 600px;
+    background: rgb(31, 55, 99);
+    float: left;
+    color: #fff;
+    padding: 1%;
+    border: 4px #000 solid;
+}
+
+.addpost{
+    display: block;
+    box-sizing:border-box;
+    min-width: 30%;
+    margin-left: 2%;
+    height: 100%;
+    float: left;
+}
+
+.addnew{
+    display: block;
+    box-sizing:border-box;
+    list-style-type:none;
+    width: 100%;
+    height: 600px;
+}
+
+.addnew :nth-child(1){
+    box-sizing:border-box;
+    max-width: 100%;
+    height: 21%;
+    padding: 1.5%;
+    background: rgb(188, 214, 237);
+    position: relative;
+    border: 4px #000 solid;
+}
+
+.addnew :nth-child(1):after {
+    font-size: 45px;
+    position: absolute;
+    content: "新增貼文";
+    left: 22%;
+    top: 28%;
+}
+
+
+.addnew :nth-child(2){
+    box-sizing:border-box;
+    margin-top: 5%;
+    height: 23%;
+    background:rgb(221, 234, 246);   
+    text-align: center;
+    position: relative;
+    border: 4px #000 solid;
+}
+
+.addnew :nth-child(2)::before {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: aliceblue;
+    content: " ";
+    background-image: url(../images/01.jpg);
+    left: 10%;
+    top: 23%;
+    background-size: cover; 
+}
+
+.addnew :nth-child(2):after {
+    font-size: 30px;
+    position: absolute;
+    content: "Content 3";
+    left: 33%;
+    top: 32%;
+}
+
+.addnew :nth-child(3){
+    box-sizing:border-box;
+    margin-top: 5%;
+    height: 23%;
+    background:rgb(221, 234, 246);
+    text-align: center;
+    position: relative;
+    border: 4px #000 solid;
+}
+
+.addnew :nth-child(3)::before {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: aliceblue;
+    content: " ";
+    background-image: url(../images/02.jpg);
+    left: 10%;
+    top: 23%;
+    background-size: cover; 
+}
+
+.addnew :nth-child(3):after {
+    font-size: 30px;
+    position: absolute;
+    content: "Content 3";
+    left: 32%;
+    top: 33%;
+}
+
+.addnew :nth-child(4){
+    box-sizing:border-box;
+    margin-top: 5%;
+    height: 23%;
+    background:rgb(221, 234, 246);
+    text-align: center;
+    position: relative;
+    border: 4px #000 solid;
+}
+
+.addnew :nth-child(4):after {
+    font-size: 30px;
+    position: absolute;
+    content: "Content 3";
+    left: 32%;
+    top: 33%;
+}
+
+.addnew :nth-child(4)::before {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: aliceblue;
+    content: " ";
+    background-image: url(../images/03.jpg);
+    left: 10%;
+    top: 23%;
+    background-size: cover; 
+}
+
+.adbox{
+    box-sizing:border-box;
+    display: block;
+    font-size: 40px;
+    width: 18%;
+    height: 600px;
+    margin-left: 2%;
+    float: left;
+}
+
+.adbox_1{
+    height: 282px;
+    background:rgb(31, 55, 99);
+    color: #fff;
+    border: 4px #000 solid;
+    position: relative;
+}
+
+.adbox_1 span,.adbox_2 span{
+    position: absolute;
+    top: 38%;
+    left: 28%;
+}
+
+.adbox_2{
+    height: 282px;
+    margin-top: 20px;
+    background:rgb(31, 55, 99);
+    color: #fff;
+    border: 4px #000 solid;
+    position: relative;
+}
+
+.chat{
+    display: block;
+    box-sizing:border-box;
+    width: 22.5%;
+    height: 600px;
+    margin-left: 2%;
+    float: left;
+    border: 4px #000 solid;
+    background: rgb(179, 198, 230);
+    background-size: cover; 
+    position: relative;
+}
+
+.chat span{
+    position: absolute;
+    font-size: 40px;
+    bottom: 2%;
+    right: 6%;
+}
+
+
+@media(max-width: 1200px){
+    .header{
+        font-size: 28px;
+    }
+    .club{
+        font-size: 40px;
+    }
+    
+    .addnew :nth-child(1):after {
+        font-size: 35px;
+        left: 28%;
+        top: 29%;
+    }
+
+    .addnew :nth-child(2):after,.addnew :nth-child(3):after,.addnew :nth-child(4):after {
+        font-size: 28px;
+        left: 33%;
+        top: 32%;
+    }
+
+    .adbox{
+        font-size: 35px;
+    }
+}
+
+
+
+@media(max-width: 900px){
+    .club{
+        width: 40%;
+    }
+
+    .addpost{
+        width: 55%;
+    }
+
+    .adbox{
+        margin-top: 20px;
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .adbox_1{
+        width: 45%;
+        float: left;
+    }
+
+    .adbox_2{
+        margin-top: 0;
+        margin-left: 5%;
+        width: 45%;
+        float: left;
+        top: 0;
+    }
+
+    .chat{
+        width: 97%;
+        margin-left: 0;
+        margin-top: 10px;
+        height: 300px;
+    }
+}
+
+
+
+@media(max-width: 420px){
+    .club{
+        width: 100%;
+        height: 400px;
+    }
+
+    .addpost{
+        margin-top: 10px;
+        margin-left: 0;
+        width: 50%;
+    }
+
+    .addpost{
+        min-width: 100%;
+    }
+    .adbox{
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .adbox_1{
+        width: 45%;
+        float: left;
+    }
+
+    .adbox_2{
+        margin-left: 5%;
+        width: 45%;
+        float: left;
+        top: 0;
+    }
+
+    .chat{
+        width: 100%;
+        margin-top: 10px;
+        height: 300px;
+    }
+}
+
+
+@media(max-width: 350px){
+
+    .adbox_1{
+        width: 45%;
+        float: left;
+    }
+
+    .adbox_2{
+        margin-left: 1%;
+        width: 45%;
+        float: right;
+        top: 0;
+    }
+}
